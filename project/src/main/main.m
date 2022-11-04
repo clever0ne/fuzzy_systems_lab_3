@@ -159,7 +159,6 @@ t = data(:, 1); hd = data(:, 2); h = data(:, 3);
 print_step_response_plot(t, hd, h, 'Step Response 3rd Parameter +60 %', ...
                          'mamdani_3in_5out_kflow_k4_step_response');
 
-y1 = reshape(evalfis(fis1, x), length(x1), length(x2))';
 print_membership_functions_plot('error', x1, 3, 'trimf', '', 'error_3in.emf');
 print_membership_functions_plot('rate',  x2, 3, 'trimf', '', 'rate_3in.emf' );
 print_membership_functions_plot('speed', y,  5, 'trimf', '', 'speed_5in.emf');
